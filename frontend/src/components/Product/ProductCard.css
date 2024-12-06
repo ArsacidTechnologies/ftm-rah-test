@@ -1,0 +1,97 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .product-card-frame {
+    background: linear-gradient(135deg, #74c786, #fad0c4);
+    border-radius: 15px;
+    justify-content: center;
+    /* padding: 10px; */
+    width: 100%; /* Adjusts to the grid size */
+    max-width: 300px; /* Prevents the card from becoming too large */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card-frame:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .product-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .product-card-details {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .product-card-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .product-card-price {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .product-card-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-card-button:hover {
+    background-color: #ff3d3d;
+  }
+
+  .product-card-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-card-old-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin: 0;
+  }
+  
+  .product-card-new-price {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+  }
+  
+  /* Responsive Design with CSS Grid */
+  @media screen and (max-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(1, 1fr); /* Single column on small screens */
+    }
+  }
+  

@@ -6,6 +6,7 @@ import './CSSs/HomePage.css';
 import BestSellers from '../components/Home/BestSellers';
 import Discounts from '../components/Home/Discounts';
 import Header from '../components/part/Header';
+import ProductsLanding from '../components/Home/ProductsLanding';
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Categories />
       <SearchBar />
       <BestSellers />
+      <ProductsLanding/>
       <Discounts />
     </div>
   );
